@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Love You Crush</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        
+        
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                          0 1 0 0 0
+                          0 0 1 0 0
+                          0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
+        <video src="vid.mp4.mp4" controls autoplay></video>
+        <div id="container">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </div>
+        
+    
+    
+    
+    </div>
+      
+    
+
+    
+
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

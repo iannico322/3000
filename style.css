@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+    background-color: blueviolet;
+}
+
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #2f2f2f;
+    border-radius: 50%;
+    border-top: 16px solid #da4545;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+ 
+
+
+video{
+    visibility: hidden;
+}
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
